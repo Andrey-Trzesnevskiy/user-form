@@ -1,0 +1,51 @@
+﻿@import url(normalize.css);
+@import url(fontello.css);
+* {
+	box-sizing: border-box;
+}
+.title {
+	font-weight: bold;
+	margin: 25px 0;
+}
+.login, .registration, .edit {
+	text-align: center;
+	width: 100%;
+}
+.info {
+	text-align: center;
+	width: 350px;
+	margin: 0 auto;
+}
+.login input, .login button, .registration input,
+.registration button, .info button, .edit button, .edit input {
+	width: 350px;
+	outline: none;
+	height: 60px;
+}
+.login input, .registration input, .edit input {
+	border: none;
+	border-bottom: solid #c2c2c2 1px;
+}
+.login button.active, .registration button.active, .info button.active, .edit button.active {
+	margin-top: 25px; 
+	background-color: #98cc32;
+	border: solid #98cc32;
+	color: white;
+}
+.login button, .registration button, .info button, .edit button {
+	color: #98cc32;
+	border: none;
+	background-color: white;
+	cursor: pointer;
+}
+.cell.name {
+	color: #c2c2c2;
+}
+.line {
+	height: 60px;
+}
+.cell {
+	width: 175px;
+	text-align: left;
+	display: inline-block;
+}

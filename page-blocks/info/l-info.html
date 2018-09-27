@@ -1,0 +1,27 @@
+<section class="info">	
+	<div class="title">Hi {{user.firstName}} {{user.lastName}}</div>
+	<div>
+		<div class="line">
+			<div class="cell name">First name</div><div class="cell">{{user.firstName}}</div>
+		</div>
+		<div class="line">
+			<div class="cell name">Last name</div><div class="cell">{{user.lastName}}</div>
+		</div>
+		<div class="line">
+			<div class="cell name">Age</div><div class="cell">{{user.age}}</div>
+		</div>
+		<div class="line">
+			<div class="cell name">Country</div><div class="cell">{{user.country}}</div>
+		</div>
+	</div>
+	<div>
+		<button class="active" ng-click="edit(user)">
+			Edit
+		</button>
+	</div>
+	<div>
+		<button ng-click="logout()">
+			Logout
+		</button>
+	</div>
+</section>

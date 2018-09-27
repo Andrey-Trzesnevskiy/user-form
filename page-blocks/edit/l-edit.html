@@ -1,0 +1,27 @@
+<section class="edit">	
+	<div class="title">Edit info</div>
+	<div>
+		<div class="line">
+			<div class="cell name">First name</div><input class="cell" ng-model="user.firstName">
+		</div>
+		<div class="line">
+			<div class="cell name">Last name</div><input class="cell" ng-model="user.lastName">
+		</div>
+		<div class="line">
+			<div class="cell name">Age</div><input class="cell" ng-model="user.age">
+		</div>
+		<div class="line">
+			<div class="cell name">Country</div><input class="cell" ng-model="user.country">
+		</div>
+	</div>
+	<div>
+		<button class="active" ng-click="save(user)">
+			Save
+		</button>
+	</div>
+	<div>
+		<button ng-click="cancel()">
+			Cancel
+		</button>
+	</div>
+</section>
