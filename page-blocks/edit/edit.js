@@ -1,6 +1,7 @@
-app.controller("edit", function ($scope, $state, $transferService) {
-  $scope.user = $transferService.getData('userData');
+app.controller("edit", function ($scope, $state) {
   let path = localStorage.getItem("email");
+  let user = localStorage.getItem("user");
+  $scope.user = JSON.parse(user);
   $scope.cancel = () => {
     $state.go('info');
   }

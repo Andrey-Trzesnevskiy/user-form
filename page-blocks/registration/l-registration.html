@@ -1,29 +1,30 @@
 <section class="registration">	
 	<div class="title">Register</div>
 	<div>
-		<input type="text" placeholder="First Name" ng-model="user.firstName">
+		<input type="text" placeholder="First Name" ng-model="user.firstName" required>
 	</div>
 	<div>
-		<input type="text" placeholder="Last Name" ng-model="user.lastName">
+		<input type="text" placeholder="Last Name" ng-model="user.lastName" required>
 	</div>
 	<div>
-		<input type="email" placeholder="Email" ng-model="email">
+		<input type="email" placeholder="Email" ng-model="email" required>
 	</div>
 	<div>
-		<input type="password" placeholder="Password" ng-model="password">
+		<input type="password" placeholder="Password" ng-model="password" required>
 	</div>
 	<div>
-		<input type="password" placeholder="Confirm Password" ng-model="confirmPassword">
+		<input type="password" placeholder="Confirm Password" ng-model="confirmPassword" required>
 
 	</div>
 	<div>
-		<input type="text" placeholder="Age" ng-model="user.age">
+		<input type="text" placeholder="Age" ng-model="user.age" required>
 	</div>
 	<div>
-		<input type="text" placeholder="Country" ng-model="user.country">
+		<input type="text" placeholder="Country" ng-model="user.country" required>
 	</div>
-	<div>{{passwordError}}</div>
-	<div>{{userError}}</div>
+	<div class="error">{{passwordError}}</div>
+	<div class="error">{{userError}}</div>
+	<div class="error">{{regError}}</div>
 	<div>
 		<button class="active" ng-click="register(user, email, password, confirmPassword)">
 			Register 

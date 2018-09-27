@@ -1,7 +1,13 @@
 ﻿@import url(normalize.css);
-@import url(fontello.css);
 * {
 	box-sizing: border-box;
+}
+.error {
+	color: red;
+	margin: 10px 0;
+}
+.registration input.error-input {
+	outline: 2px solid red;
 }
 .title {
 	font-weight: bold;
@@ -17,8 +23,13 @@
 	margin: 0 auto;
 }
 .login input, .login button, .registration input,
-.registration button, .info button, .edit button, .edit input {
+.registration button, .info button, .edit button {
 	width: 350px;
+	outline: none;
+	height: 60px;
+}
+.edit input {
+	width: 175px;
 	outline: none;
 	height: 60px;
 }
@@ -37,6 +48,7 @@
 	border: none;
 	background-color: white;
 	cursor: pointer;
+	text-transform: uppercase;
 }
 .cell.name {
 	color: #c2c2c2;

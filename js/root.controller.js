@@ -1,4 +1,4 @@
-app.controller("root.controller", function ($scope, $state) {
+app.controller("root.controller", function ($scope) {
     let config = {
         apiKey: "AIzaSyAFfY0qaYLIRkllkeUJzoTC5_yrYr4tJZ4",
         authDomain: "form-2f1c1.firebaseapp.com",

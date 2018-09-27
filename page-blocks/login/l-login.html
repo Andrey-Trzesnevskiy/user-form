@@ -6,7 +6,8 @@
 	<div>
 		<input type="password" placeholder="Password" ng-model="user.password">
 	</div>
-	<div>{{errorSignIn}}</div>
+	<div class="error">{{errorSignIn}}</div>
+	<div class="error">{{inputError}}</div>
 	<div>
 		<button class="active" ng-click="login(user)">
 			Login
